@@ -1,4 +1,4 @@
-const PRODUCTION_BACKEND_URL = 'https://YOUR-BACKEND-URL-HERE';
+const PRODUCTION_BACKEND_URL = 'https://empathetic-ai-assistant.onrender.com';
 
 const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 window.APP_CONFIG = {
