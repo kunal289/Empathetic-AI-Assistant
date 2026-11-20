@@ -5,7 +5,7 @@ class EmpatheticAI {
     constructor() {
         this.webcamHandler = null;
         this.isProcessing = false;
-        this.backendURL = 'http://localhost:5000';
+        this.backendURL = (window.APP_CONFIG && window.APP_CONFIG.backendURL) || 'http://localhost:5000';
         this.emotionHistory = [];
         this.emotionChart = null;
         this.recognition = null; // speech recognition instance

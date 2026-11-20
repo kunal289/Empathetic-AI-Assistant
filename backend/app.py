@@ -446,4 +446,5 @@ def generate_empathetic_response(emotion, user_text, mixed_emotions, sarcasm_sco
 if __name__ == '__main__':
     print("Starting EmpatheticAI Server...")
     print("Sentiment model loading...")
-    app.run(debug=True, port=5000, host='0.0.0.0')
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=os.environ.get('FLASK_DEBUG') == '1', port=port, host='0.0.0.0')
